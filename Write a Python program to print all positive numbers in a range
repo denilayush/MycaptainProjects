@@ -1,0 +1,20 @@
+#How many numbers user wants to put in list
+Count = (int(input("Enter the number of list elements :")))
+
+#initiation of list
+List = []
+
+#Get the elements of the List
+for i in range(0,Count):
+    number = int(input())
+    List.append(number)
+    
+#initiation of output list    
+List_Second = []
+for i in List:
+    if i >= 0:
+        List_Second.append(i)
+
+#results
+print("This is Input List =", List)
+print("This is Output List =", List_Second)    
